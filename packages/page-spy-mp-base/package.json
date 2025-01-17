@@ -1,0 +1,49 @@
+{
+  "name": "@huolala-tech/page-spy-mp-base",
+  "version": "2.1.0",
+  "description": "The base of PageSpy for miniprogram.",
+  "license": "MIT",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@huolala-tech/page-spy-base": "^2.1.0",
+    "@huolala-tech/page-spy-types": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://www.pagespy.org/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuolalaTech/page-spy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HuolalaTech/page-spy/issues"
+  },
+  "files": [
+    "dist",
+    "global.d.ts"
+  ],
+  "keywords": [
+    "pagespy",
+    "debug",
+    "remote",
+    "inspect",
+    "devtools"
+  ],
+  "browserslist": [
+    "chrome > 75",
+    "safari > 12",
+    "> 0.1%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
